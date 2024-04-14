@@ -9,43 +9,41 @@
     <link rel="stylesheet" href="/html/cachorros.html">
     <link rel="stylesheet" href="/html/Gatos.html">
     <link rel="stylesheet" href="/html/sobreNos.html">
+    <script src="/assets/script/searchbar.js"></script>
     <title>Amigos de Patas</title>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#"><img height="30px" src="/assets/images/silhouette-3342484_1280.webp" alt=""></a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <nav class="navbar navbar-expand-lg">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img height="30px" src="/assets/images/silhouette-3342484_1280.webp" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="/html/amigosdepatas.html">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/html/Gatos.html">Gatos</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/html/cachorros.html">Cachorros</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="/html/sobreNos.html">Um pouco Sobre Nós</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true"></a>
-              </li>
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="/html/amigosdepatas.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/Gatos.html">Gatos</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/cachorros.html">Cachorros</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="/html/sobreNos.html">Um pouco Sobre Nós</a>
+                </li>
             </ul>
-            <form class="d-flex" role="search">
+            <form class="d-flex" onsubmit="return pesquisar()">
                 <div class="input-group">
                     <span class="input-group-text bg-nav"><i class="bi bi-search"></i></span>
-                    <input type="text" class="form-control bg-nav" aria-label="Amount (to the nearest dollar)">
-                    <span class="input-group-text bg-nav"><a href="" class="btn">Buscar</a></span>
-                  </div>
+                    <input id="searchbar" type="text" class="form-control bg-nav" placeholder="Pesquisar...">
+                    <button class="btn bg-nav" type="submit">Buscar</button>
+                </div>
             </form>
-          </div>
         </div>
-      </nav>
+    </div>
+</nav>
 <body class="">
       <section class="container-fluid">
         <div id="carouselExampleCaptions" class="carousel slide">
@@ -115,7 +113,7 @@
     </section>
 
     <section class="card-cor">
-      <div class="container-xxl mt-5">
+      <div class="container-xxl mt-5 ">
       <div class="text-center">
         <h3>Encontre seu novo amigo</h3>
       </div>
@@ -133,7 +131,7 @@
       </div> 
       <div class="col-md-3">
         <div class="card">
-          <img class="card-cachorro" src="/assets/images/download.jfif" class="card-img-top" alt="...">
+          <img class="card-cachorro" src="/assets/images/gato1.jpg" class="card-img-top" alt="...">
           <div class="card-body">
             <h5 class="card-title">Toby</h5>
             <p class="card-text">Rio de Janeiro</p>
@@ -153,7 +151,7 @@
           </div>
           <div class="col-md-3">
             <div class="card">
-              <img class="card-cachorro" src="/assets/images/download 3.jfif" class="card-img-top" alt="...">
+              <img class="card-cachorro" src="/assets/images/gato2.jpeg" class="card-img-top" alt="...">
               <div class="card-body">
                 <h5 class="card-title">Bob</h5>
                 <p class="card-text">São Paulo</p>
@@ -173,7 +171,7 @@
               </div>
               <div class="col-md-3">
                 <div class="card">
-                  <img class="card-cachorro" src="/assets/images/personalidade-cachorro-caramelo.jpg" class="card-img-top" alt="...">
+                  <img class="card-cachorro" src="/assets/images/gato3.webp" class="card-img-top" alt="...">
                   <div class="card-body">
                     <h5 class="card-title">Laila</h5>
                     <p class="card-text">Rio de Janeiro</p>
@@ -193,7 +191,7 @@
                   </div>
                   <div class="col-md-3">
                     <div class="card">
-                      <img class="card-cachorro" src="/assets/images/1395947931-salsicha.webp" class="card-img-top" alt="...">
+                      <img class="card-cachorro" src="/assets/images/gato4.webp" class="card-img-top" alt="...">
                       <div class="card-body">
                         <h5 class="card-title">Kika</h5>
                         <p class="card-text">Campinas</p>
@@ -213,7 +211,7 @@
                       </div>
                       <div class="col-md-3">
                         <div class="card">
-                          <img class="card-cachorro" src="/assets/images/doberman_131_0_600.jpg" class="card-img-top" alt="...">
+                          <img class="card-cachorro" src="/assets/images/gato5.webp" class="card-img-top" alt="...">
                           <div class="card-body">
                             <h5 class="card-title">Mike</h5>
                             <p class="card-text">Porto Velho</p>
@@ -233,7 +231,7 @@
                           </div>
                           <div class="col-md-3">
                             <div class="card">
-                              <img class="card-cachorro" src="/assets/images/husky-siberiano-caracteristicas-guia-racas.webp" class="card-img-top" alt="...">
+                              <img class="card-cachorro" src="/assets/images/gato6.jpg" class="card-img-top" alt="...">
                               <div class="card-body">
                                 <h5 class="card-title">Charlie</h5>
                                 <p class="card-text">Gramado</p>
@@ -246,8 +244,8 @@
   </div>    
     </section>
 
-    <footer class="container-fluid">
-      <section  class="container-fluid py-4">
+    <footer class="container-fluid sd">
+      <section  class="container-fluid py-4 ">
           <div class="row">
             <nav  class="col text-center">
               <ul type="none">

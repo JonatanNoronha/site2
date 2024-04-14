@@ -21,46 +21,18 @@ nav{
 .color-text{
     color: var(--black);
 }
-.tm-img{
-    width: 100%;
-}
 .p-2{
     font-size: 1rem;
     text-align: justify;
 }
-.tituloCarrossel{
-    font-size: 50px;
-    color:#2F3E46;
-    text-shadow:antiquewhite 0.1em 0.1em 0.1em;
-}
-.subCarrossel{
-    font-size: 40px;
-    color:rgb(54, 54, 54);
-    text-shadow:#CAD2C5 0.1em 0.1em 0.1em;
-}
-.cachorro{
-    width: 650px;
-    height: 450px;
-}
-
-.card-cachorro{
-    width: 100%;
-    height: 200px;
-}
-.card-cor{
-    background-color: var(--cor2);
-}
-
-.titulo{
-    margin-bottom: 30px;
-}
-
 .texto{
     margin-left:  300px;
     margin-right: 300px;
     margin-bottom: 40px;
 }
-
 .nav-link:hover{
     color: antiquewhite;
+}
+.cor{
+    background-color: var(--cor2);
 }
